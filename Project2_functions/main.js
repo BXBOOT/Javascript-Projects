@@ -21,5 +21,10 @@ function aFunction() {
     num += ' the number expressed in words is thirty one';
     document.getElementById("aNumeral").innerHTML= num;
 
-    window.alert('ChangeIt')
+    
 };
+
+function newFunction(p1, p2) {
+    return p1*p2;
+}
+document.getElementById("demo").innerHTML = newFunction(5, 5); //be sure t use the same name in the get Element as the fuction
