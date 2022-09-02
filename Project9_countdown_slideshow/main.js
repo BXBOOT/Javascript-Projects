@@ -24,5 +24,5 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex =1}
     slides[slideIndex -1].style.display ="block";
-    setTimeout(showSlides, 200); //slides rotate from this instruction, can make it faster with smaller number because measured in milliseconds
+    setTimeout(showSlides, 2000); //slides rotate from this instruction, can make it faster with smaller number because measured in milliseconds
 }

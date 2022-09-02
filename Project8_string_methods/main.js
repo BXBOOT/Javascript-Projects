@@ -27,6 +27,6 @@ function find() {
 }
 
 function precision_Method() {
-        var X = 325.3232562();
-        document.getElementById("Precision").innerHTML= X.toPrecision(7);
+        var X = 325.3232562;
+        document.getElementById("Precision").innerHTML= X.toPrecision(4);
     }
