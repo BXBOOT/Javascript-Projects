@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<header>jQuery</header>
+
+<body>
+    <p>A library to make it quicker</p>
+
+    <script>
+       /* posts and alert window when someone clicks on the paragraph */
+       $("p").click (function() {
+            window.alert("You clicked on a paragraph");
+       });
+
+       /*Hides the Header as the page loads*/
+       $("header").hide("slow");
+
+    </script>
+</body>
+</html>
