@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/font.css">
+    <title>Landing Page</title>
+</head>
+<header>
+  <div class="wrapper">
+    <div class="navbar">
+      <div class="inner_navbar">
+        <div class="logo">
+         
+     </div>
+        <div class="menu">
+          <ul>
+           <a href="#home" id="link"><li>Home</li></a>
+           <a href="#servies" id="link"><li>Services</li></a>
+           <a href="#contact" id="link"><li>Contact</li></a>
+	   <a href="#gallery" id="link"><li>Gallery</li></a>
+	   <a href="#video" id="link"><li>Video</li></a>
+          </ul>
+        </div>
+
+</header>
+
+<body>
+
+	<div id="home">
+		<h1> This is where we will use tag lines to advertise the areas we serve company history etc.</h1>
+	</div>
+	
+    <div id="contact">
+        <h1 class="main">CONTACT US FOR A FREE QUOTE TODAY</h1>
+	<p>in the video section you will see different uses of the ifram tag. one requires user interaction, one plays automatically with no 	sound. The last plays a continous clip in a loop</p>
+    </div>
+<br>
+	<div>
+		<form action="" method="get">
+		First Name<input type="text" name="First_Name"><br>
+		Last Name<input type="text" name="Last_Name"><br>
+		Email<input type="text" name="Email"><br>
+		Phone<input type="number" name="Phone"><br>
+		</form>
+	</div>
+
+	<div id="services">
+	<p class="description">
+    	 We are a full service company.</br>
+   	 	We take pride in our on-time delivery and full clean up of the site.</br>
+   	 	Additional services other than those listed on our service page can be negotiated.</br>
+	</p>
+	</div>
+	
+	<div id="gallery">
+		<img src="./Images/dogs.jpg" alt="a picture of 2 puppies">
+	
+	</div><br>
+
+	<hr>
+
+	<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="./Images/planets.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./Images/thumbnail_1.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./Images/thumbnail_2.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="./Images/thumbnail_3.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="./Images/planets.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="./Images/thumbnail_1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="./Images/thumbnail_2.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="./Images/thumbnail_3.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+<hr>
+
+	<div id="video">
+		<iframe width="380" height="280" src="https://www.youtube.com/embed/dexpn0Vv7a4">
+		</iframe>
+<br>
+		<iframe width="380" height="280" src="https://www.youtube.com/embed/nVm9lD-leCE?autoplay=1&mute=1">
+		</iframe>
+<br>
+		<iframe width="380" height="280" src="https://www.youtube.com/embed/Z22psnHA8HE?		playlist=Z22psnHA8HE&loop=1">
+		</iframe>
+	</div>
+
+</body>
+<script src="website.js"></script>
+<footer>Copyright pending</footer>
+</html>
